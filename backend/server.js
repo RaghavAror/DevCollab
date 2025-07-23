@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://dev-collab-sigma.vercel.app/", // CHANGE THIS TO YOUR ACTUAL FRONTEND URL
+        origin: "https://dev-collab-sigma.vercel.app/", 
         methods: ["GET", "POST"]
     }
 });
