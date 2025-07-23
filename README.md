@@ -60,7 +60,66 @@ To get a local copy up and running, follow these simple steps.
 **1. Clone the repository:**
 
 ```bash
-git clone [https://github.com/your-username/collaborative-code-editor.git](https://github.com/your-username/collaborative-code-editor.git)
+git clone [https://github.com/RaghavAror/DevCollab.git](https://github.com/RaghavAror/DevCollab.git)
 cd collaborative-code-editor
 ```
+
+**2. Backend Setup:**
+
+```bash
+cd backend
+npm install
+touch .env
+```
+
+Note:- Add MONGO_URI to the .env file like this:
+MONGO_URI=your_mongodb_atlas_connection_string_here
+PORT=5000
+
+**3. Start the backend server**
+
+```bash
+node server.js 
+```
+
+The backend server will run on http://localhost:5000 usually.
+
+**4. Frontend Setup:**
+Open a new terminal window and navigate to the frontend directory:
+
+```bash
+cd ../frontend
+npm install
+npm start
+```
+
+The frontend application will open in your browser, usually at http://localhost:3000.
+
+**5. Collaborate!**
+Open http://localhost:3000 in multiple browser tabs or different browsers and enter the copied Room ID to enter with your username, to test the real-time collaboration.
+
+**6. Future Enhancements**
+
+* Operational Transformation (OT) / CRDTs: Implement advanced algorithms like Y.js for robust, conflict-free real-time merging of concurrent edits.
+* Cursor Synchronization: Display real-time cursors and selections of other collaborators.
+* User Authentication: Implement a secure login/signup system with JWTs.
+* Room Listing/Discovery: Allow users to see a list of active rooms.
+* Chat Functionality: Add a real-time chat within each collaborative session.
+* Version History: Implement a way to track document revisions and revert to previous states.
+* Syntax Linting & Formatting: Integrate linting tools for better code quality.
+* Scalability: Use a Socket.IO Redis adapter for horizontal scaling of the backend across multiple server instances.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
