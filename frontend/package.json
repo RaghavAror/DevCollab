@@ -8,6 +8,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "private": true,
+  "homepage": ".",
   "keywords": [],
   "author": "",
   "license": "ISC",
