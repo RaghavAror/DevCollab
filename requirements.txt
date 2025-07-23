@@ -1,0 +1,9 @@
+node.js
+express.js
+socket.io
+cors
+uuid
+react 
+react-scripts
+mongoose 
+dotenv
